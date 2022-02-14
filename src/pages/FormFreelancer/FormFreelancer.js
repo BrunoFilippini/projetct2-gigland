@@ -8,7 +8,7 @@ export function FormFreelancer() {
   const navigate = useNavigate();
   const [form, setForm] = useState({
     name: "",
-    profission: "",
+    profession: "",
     branding: "",
     education: "",
     recentProjects: "",
@@ -53,12 +53,12 @@ export function FormFreelancer() {
             value={form.name}
             onChange={handleChange}
           />
-          <label htmlFor="profission">Profissão:</label>
+          <label htmlFor="profession">Profissão:</label>
           <input
-            id="profission"
-            name="profission"
+            id="profession"
+            name="profession"
             onChange={handleChange}
-            value={form.profission}
+            value={form.profession}
           />
           <label htmlFor="branding">Uma breve descrição sobre você:</label>
           <input

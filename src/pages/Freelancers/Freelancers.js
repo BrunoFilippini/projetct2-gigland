@@ -29,7 +29,7 @@ export function Freelancers() {
             key={currentFreelancer._id}
             id={currentFreelancer._id}
             name={currentFreelancer.name}
-            profission={currentFreelancer.profission}
+            profession={currentFreelancer.profession}
             branding={currentFreelancer.branding}
             education={currentFreelancer.education}
             recentProjects={currentFreelancer.recentProjects}
