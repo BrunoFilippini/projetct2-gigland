@@ -18,7 +18,7 @@ export function CardFreelancer(props) {
       <img src={props.img} alt={`Foto de ${props.name}`} />
       <div>
         <h5>{props.name}</h5>
-        <p>{`Profissão: ${props.profission}`}</p>
+        <p>{`Profissão: ${props.profession}`}</p>
         <p>{`Sobre mim: ${props.branding}`}</p>
         <p>{`Formação acadêmica: ${props.education}`}</p>
         <p>{`Projetos que participei: ${props.recentProjects}`}</p>
@@ -26,7 +26,7 @@ export function CardFreelancer(props) {
         <p>{`Meus interesses: ${props.interest}`}</p>
         <p>{`Contato: ${props.contact}`}</p>
 
-        <Link to={`/editar-pet/${props.id}`}>
+        <Link to={`/editar-card-freelancer/${props.id}`}>
           <button type="button">Editar Perfil</button>
         </Link>
 
