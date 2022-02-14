@@ -4,6 +4,7 @@ import { NavBar } from "./components/NavBar/NavBar";
 import { Employers } from "./pages/Employers/Employers";
 import { Freelancers } from "./pages/Freelancers/Freelancers";
 import { FormFreelancer } from "./pages/FormFreelancer/FormFreelancer";
+import { SearchBar } from "./components/SearchBar/SearchBar.js";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/Employers" element={<Employers />} />
         <Route path="/Freelancers" element={<Freelancers />} />
         <Route path="/FormFreelancer" element={<FormFreelancer />} />
+        <Route path="/SearchBar" element={<SearchBar />} />
       </Routes>
     </BrowserRouter>
   );
