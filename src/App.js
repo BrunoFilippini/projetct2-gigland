@@ -4,7 +4,7 @@ import { NavBar } from "./components/NavBar/NavBar";
 import { Employers } from "./pages/Employers/Employers";
 import { Freelancers } from "./pages/Freelancers/Freelancers";
 import { FormFreelancer } from "./pages/FormFreelancer/FormFreelancer";
-import { SearchBar } from "./components/SearchBar/SearchBar.js";
+import { SearchBar } from "./components/SearchBar/SearchBar";
 import "./App.css";
 
 function App() {
