@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/gigland2.png";
 import styles from "./NavBar.module.css";
-import { SearchBar } from "./components/SearchBar/SearchBar.js";
+
 
 export function NavBar() {
   return (
