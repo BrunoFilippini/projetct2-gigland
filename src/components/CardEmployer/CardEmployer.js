@@ -5,7 +5,7 @@ export function CardEmployer(props) {
     async function handleDelete() {
       try {
         await axios.delete(
-          `https://ironrest.herokuapp.com/giglandGigs${props.id}`
+          `https://ironrest.herokuapp.com/giglandGigs/${props.id}`
         );
         props.setRerender(true);
       } catch (error) {
@@ -18,7 +18,7 @@ export function CardEmployer(props) {
           <img src={props.img} alt={`Foto de ${props.nameProject}`} />
           <div>
             <h5>{props.nameProject}</h5>
-            <p>{`'Área': ${props.area}`}</p>
+            <p>{`Área: ${props.area}`}</p>
             <p>{`Descrição: ${props.description}`}</p>
             <p>{`Data de início: ${props.startDate}`}</p>
             <p>{`Budget: ${props.budget}`}</p>
