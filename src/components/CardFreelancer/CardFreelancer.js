@@ -26,7 +26,7 @@ export function CardFreelancer(props) {
         <p>{`Meus interesses: ${props.interest}`}</p>
         <p>{`Contato: ${props.contact}`}</p>
 
-        <Link to={`/editar-card-freelancer/${props.id}`}>
+        <Link to={`/edit-freelancer/${props.id}`}>
           <button type="button">Editar Perfil</button>
         </Link>
 

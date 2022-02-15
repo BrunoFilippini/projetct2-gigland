@@ -4,6 +4,7 @@ import { NavBar } from "./components/NavBar/NavBar";
 import { Employers } from "./pages/Employers/Employers";
 import { Freelancers } from "./pages/Freelancers/Freelancers";
 import { FormFreelancer } from "./pages/FormFreelancer/FormFreelancer";
+import { EditFreelancer } from "./pages/EditFreelancer/EditFreelancer";
 import { FormEmployer} from "./pages/FormEmployer/FormEmployer";
 import { SearchBar } from "./components/SearchBar/SearchBar";
 import "./App.css";
@@ -17,6 +18,8 @@ function App() {
         <Route path="/Employers" element={<Employers />} />
         <Route path="/Freelancers" element={<Freelancers />} />
         <Route path="/FormFreelancer" element={<FormFreelancer />} />
+
+        <Route path="/edit-freelancer/:id" element={<EditFreelancer />} />
         <Route path="/FormEmployer" element={<FormEmployer />} />
         <Route path="/SearchBar" element={<SearchBar />} />
       </Routes>

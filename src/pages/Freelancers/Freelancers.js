@@ -4,6 +4,7 @@ import axios from "axios";
 
 export function Freelancers() {
   const [freelancer, setFreelancer] = useState([]);
+  const [rerender, setRerender] = useState(true);
 
   useEffect(() => {
     async function fetchFreelancer() {
@@ -18,7 +19,8 @@ export function Freelancers() {
     }
 
     fetchFreelancer();
-  }, []);
+    setRerender(false);
+  }, [rerender]);
 
   return (
     <>
@@ -26,6 +28,7 @@ export function Freelancers() {
       {freelancer.map((currentFreelancer) => {
         return (
           <CardFreelancer
+            setRerender={setRerender}
             key={currentFreelancer._id}
             id={currentFreelancer._id}
             name={currentFreelancer.name}
