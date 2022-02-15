@@ -1,20 +1,19 @@
 .form {
-    display: flex;
-    flex-direction: column;
-    /*margin: 0 800px 0 800px;*/
-  }
-  .form label {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-  }
-  
-  .form button {
-    margin: 50px;
-  }
-  
-  h1 {
-    display: flex;
-    justify-content: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  /*margin: 0 800px 0 800px;*/
+}
+.form label {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.form button {
+  margin: 50px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+}
