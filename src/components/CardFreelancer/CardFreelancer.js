@@ -5,7 +5,7 @@ export function CardFreelancer(props) {
   async function handleDelete() {
     try {
       await axios.delete(
-        `https://ironrest.herokuapp.com/giglandFreelas${props.id}`
+        `https://ironrest.herokuapp.com/giglandFreelas/${props.id}`
       );
       props.setRerender(true);
     } catch (error) {
