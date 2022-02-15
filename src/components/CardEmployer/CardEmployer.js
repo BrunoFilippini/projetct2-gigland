@@ -7,7 +7,7 @@ export function CardEmployer(props) {
         await axios.delete(
           `https://ironrest.herokuapp.com/giglandGigs/${props.id}`
         );
-        props.setRerender(true);
+        props.setRereder(true);
       } catch (error) {
         console.error(error);
       }
@@ -26,7 +26,7 @@ export function CardEmployer(props) {
             <p>{`Contato: ${props.contact}`}</p>
 
     
-            <Link to={`/editar-card-employer/${props.id}`}>
+            <Link to={`/edit-employer/${props.id}`}>
               <button type="button">Editar Perfil</button>
             </Link>
     
