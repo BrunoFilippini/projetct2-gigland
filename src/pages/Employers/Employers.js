@@ -6,6 +6,7 @@ import axios from "axios";
 
 export function Employers() {
   const [employer, setEmployer] = useState([]);
+  const [rerender, setRereder] = useState(true);
 
   useEffect(() => {
     async function fetchEmployer() {
@@ -20,7 +21,8 @@ export function Employers() {
     }
 
     fetchEmployer();
-  }, [])
+    setRereder(false);
+  }, [rerender])
 
 
   return (
@@ -30,6 +32,7 @@ export function Employers() {
         return (
           <CardEmployer
             key={currentEmployer._id}
+            setRereder={setRereder}
             id={currentEmployer._id}
             nameProject={currentEmployer.nameProject}
             area={currentEmployer.area}
