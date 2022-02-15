@@ -2,8 +2,6 @@ import { CardEmployer } from "../../components/CardEmployer/CardEmployer";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-
-
 export function Employers() {
   const [employer, setEmployer] = useState([]);
   const [rerender, setRereder] = useState(true);
@@ -22,8 +20,7 @@ export function Employers() {
 
     fetchEmployer();
     setRereder(false);
-  }, [rerender])
-
+  }, [rerender]);
 
   return (
     <>
