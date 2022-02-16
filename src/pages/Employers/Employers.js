@@ -1,8 +1,7 @@
+import styles from "./Employers.module.css";
 import { CardEmployer } from "../../components/CardEmployer/CardEmployer";
 import { useState, useEffect } from "react";
 import axios from "axios";
-
-import styles from "./Employers.module.css";
 
 export function Employers() {
   const [employer, setEmployer] = useState([]);

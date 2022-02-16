@@ -6,7 +6,7 @@ import { Freelancers } from "./pages/Freelancers/Freelancers";
 import { FormFreelancer } from "./pages/FormFreelancer/FormFreelancer";
 import { EditFreelancer } from "./pages/EditFreelancer/EditFreelancer";
 import { EditEmployer } from "./pages/EditEmployer/EditEmployer";
-import { FormEmployer} from "./pages/FormEmployer/FormEmployer";
+import { FormEmployer } from "./pages/FormEmployer/FormEmployer";
 import { SearchBar } from "./components/SearchBar/SearchBar";
 import "./App.css";
 

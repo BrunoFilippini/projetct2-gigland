@@ -4,65 +4,63 @@ import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
-
 export function EditEmployer() {
-    const params = useParams();
-    const navigate = useNavigate();
-  
-    const [form, setForm] = useState({
-        nameProject: "",
-        area: "",
-        description: "",
-        startDate: "",
-        budget: "",
-        details: "",
-        contact: "",
-        img: "",
-    });
+  const params = useParams();
+  const navigate = useNavigate();
 
-    useEffect(() => {
-        async function fetchEmployer() {
-          try {
-            const response = await axios.get(
-              `https://ironrest.herokuapp.com/giglandGigs/${params.id}`
-            );
-            setForm({ ...response.data });
-          } catch (error) {
-            console.error(error);
-          }
-        }
-        fetchEmployer();
-      }, [params.id]);
+  const [form, setForm] = useState({
+    nameProject: "",
+    area: "",
+    description: "",
+    startDate: "",
+    budget: "",
+    details: "",
+    contact: "",
+    img: "",
+  });
 
-    function handleChange(event) {
-        setForm({ ...form, [event.target.name]: event.target.value });
+  useEffect(() => {
+    async function fetchEmployer() {
+      try {
+        const response = await axios.get(
+          `https://ironrest.herokuapp.com/giglandGigs/${params.id}`
+        );
+        setForm({ ...response.data });
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    fetchEmployer();
+  }, [params.id]);
+
+  function handleChange(event) {
+    setForm({ ...form, [event.target.name]: event.target.value });
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    for (let key in form) {
+      if (!form[key]) {
+        window.alert(`Gentileza preencher o campo ${key} corretamente`);
+        return;
+      }
     }
 
-    function handleSubmit(event) {
-        event.preventDefault();
-    
-        for (let key in form) {
-          if (!form[key]) {
-            window.alert(`Gentileza preencher o campo ${key} corretamente`);
-            return;
-          }
-        }
+    delete form._id;
+    axios
+      .put(`https://ironrest.herokuapp.com/giglandGigs/${params.id}`, form)
+      .then((result) => navigate(`/Employers`))
+      .catch((error) => {
+        console.error(error);
+      });
+  }
 
-        delete form._id;
-        axios
-          .put(`https://ironrest.herokuapp.com/giglandGigs/${params.id}`, form)
-          .then((result) => navigate(`/Employers`))
-          .catch((error) => {
-            console.error(error);
-          });
-      
-    }
-
-    return (
-        <>
-          <h1>Atualize seu cadastro:</h1>
-            <form onSubmit={handleSubmit}>
-                <div className={styles.form}>
+  return (
+    <>
+      <h1 className={styles.title}>Atualize seu cadastro:</h1>
+      <form onSubmit={handleSubmit}>
+        <div className={styles.form}>
           <label htmlFor="nameProject">Nome do projeto:</label>
           <input
             id="nameProject"
@@ -71,7 +69,7 @@ export function EditEmployer() {
             value={form.nameProject}
             onChange={handleChange}
           />
-    
+
           <label htmlFor="area">Segmento</label>
           <input
             id="area"
@@ -88,7 +86,7 @@ export function EditEmployer() {
             value={form.description}
             onChange={handleChange}
           />
-        
+
           <label htmlFor="startDate">Data</label>
           <input
             id="startDate"
@@ -124,10 +122,8 @@ export function EditEmployer() {
           <label htmlFor="img">Link para logo ou imagem de seu projeto:</label>
           <input id="img" name="img" value={form.img} onChange={handleChange} />
           <button type="submit">Editar Perfil</button>
-          </div>
-        </form>
-        </>
-    );
+        </div>
+      </form>
+    </>
+  );
 }
-    
-

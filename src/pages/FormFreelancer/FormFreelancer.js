@@ -43,7 +43,7 @@ export function FormFreelancer() {
 
   return (
     <>
-      <h1>Faça Cadastro Aqui !</h1>
+      <h1 className={styles.title}>Faça Cadastro Aqui !</h1>
       <form onSubmit={handleSubmit}>
         <div className={styles.form}>
           <label htmlFor="freelancerName">Nome: </label>
