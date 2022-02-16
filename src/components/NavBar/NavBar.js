@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/gigland2.png";
 import styles from "./NavBar.module.css";
 
+import { SearchBar } from "../SearchBar/SearchBar";
+
 export function NavBar() {
   return (
     <>
@@ -26,8 +28,8 @@ export function NavBar() {
               </button>
             </Link>
           </div>
-
-          <h1 className={styles.SearchBar}>searchBar??</h1>
+          
+        {/* <h1 className={styles.SearchBar}> <SearchBar /></h1> */} 
 
           <div className={styles.buttonsLinksForm}>
             <Link to="/FormFreelancer">

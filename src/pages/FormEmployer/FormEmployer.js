@@ -82,8 +82,11 @@ export function FormEmployer() {
           <label htmlFor="budget">Orçamento</label>
           <input
             id="budget"
-            placeholder="Orçamento"
+            placeholder="US$0,00"
             name="budget"
+            type= "number"
+            step= "0.01"
+            min= "1"
             value={form.budget}
             onChange={handleChange}
           />
