@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:900i");
+
+.bgImg {
+  background-color: #fff;
+  background-image: url(../../assets/coverHome.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.buttons {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -100px 200px 0 200px;
+}
+
+/* remove underlinne dos links  */
+:any-link {
+  text-decoration: none;
+}
+
+/* Button Freelancer */
+.btnFreelancer {
+  background: rgb(83, 230, 27);
+  background: linear-gradient(
+    0deg,
+    rgba(83, 230, 27, 0.9) 0%,
+    rgba(234, 253, 45, 0.6) 100%
+  );
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  padding: 1rem 4rem;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.btnFreelancer:hover {
+  box-shadow: 1px 1px 25px 10px rgba(117, 211, 29, 0.4);
+}
+
+.btnFreelancer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(117, 211, 29),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.btnFreelancer:hover:before {
+  left: 100%;
+}
+
+/*  Button Emplyer */
+
+.btnEmployer {
+  background: rgb(27, 158, 245);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 151, 255, 0.9) 0%,
+    rgba(2, 252, 250, 0.6) 100%
+  );
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  padding: 1rem 5rem;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.btnEmployer:hover {
+  box-shadow: 1px 1px 25px 10px rgba(57, 205, 250, 0.4);
+}
+
+.btnEmployer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(57, 205, 250),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.btnEmployer:hover:before {
+  left: 100%;
+}
