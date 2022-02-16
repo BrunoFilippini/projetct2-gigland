@@ -89,6 +89,8 @@ export function FormFreelancer() {
           <input
             id="skills"
             name="skills"
+            maxLength={50}
+            type="text"
             value={form.skills}
             onChange={handleChange}
           />
@@ -98,6 +100,7 @@ export function FormFreelancer() {
           <input
             id="interest"
             name="interest"
+            
             value={form.interest}
             onChange={handleChange}
           />

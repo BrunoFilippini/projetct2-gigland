@@ -75,6 +75,8 @@ export function EditEmployer() {
             id="area"
             placeholder="segmento"
             name="area"
+            maxLength={50}
+            type="text"
             value={form.area}
             onChange={handleChange}
           />
@@ -83,6 +85,8 @@ export function EditEmployer() {
             id="description"
             placeholder="Breve descrição"
             name="description"
+            maxLength={50}
+            type="text"
             value={form.description}
             onChange={handleChange}
           />
@@ -92,6 +96,8 @@ export function EditEmployer() {
             id="startDate"
             placeholder="Data"
             name="startDate"
+            maxLength={50}
+            type="text"
             value={form.startDate}
             onChange={handleChange}
           />
@@ -100,6 +106,8 @@ export function EditEmployer() {
             id="budget"
             placeholder="Orçamento"
             name="budget"
+            maxLength={50}
+            type="text"
             value={form.budget}
             onChange={handleChange}
           />
@@ -108,6 +116,8 @@ export function EditEmployer() {
             id="details"
             placeholder="Detalhe aqui sua vaga"
             name="details"
+            maxLength={50}
+            type="text"
             value={form.details}
             onChange={handleChange}
           />
@@ -116,6 +126,8 @@ export function EditEmployer() {
             id="contact"
             placeholder="Endereço de e-mail"
             name="contact"
+            maxLength={50}
+            type="text"
             value={form.contact}
             onChange={handleChange}
           />
