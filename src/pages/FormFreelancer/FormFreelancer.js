@@ -1,6 +1,7 @@
 import styles from "./FormFreelancer.module.css";
 import { useState } from "react";
 import axios from "axios";
+import formJobsImg from "../../assets/jobsImg.png";
 
 import { useNavigate } from "react-router-dom";
 
@@ -42,12 +43,13 @@ export function FormFreelancer() {
   }
 
   return (
-    <>
-      <h1 className={styles.title}>Faça Cadastro Aqui !</h1>
+    <div className={styles.divPage}>
       <form onSubmit={handleSubmit}>
         <div className={styles.form}>
+          <h2 className={styles.title}>Preencha seu cadastro:</h2>
           <label htmlFor="freelancerName">Nome: </label>
           <input
+            maxlength="32"
             id="freelancerName"
             name="name"
             value={form.name}
@@ -55,6 +57,7 @@ export function FormFreelancer() {
           />
           <label htmlFor="profession">Profissão:</label>
           <input
+            maxlength="32"
             id="profession"
             name="profession"
             onChange={handleChange}
@@ -62,6 +65,7 @@ export function FormFreelancer() {
           />
           <label htmlFor="branding">Uma breve descrição sobre você:</label>
           <input
+            maxlength="128"
             id="branding"
             name="branding"
             value={form.branding}
@@ -69,6 +73,7 @@ export function FormFreelancer() {
           />
           <label htmlFor="education">Sua formação:</label>
           <input
+            maxlength="128"
             id="education"
             name="education"
             value={form.education}
@@ -78,6 +83,7 @@ export function FormFreelancer() {
             Conte um pouco sobre seus trabalhos anteriores:
           </label>
           <input
+            maxlength="128"
             id="recentProjects"
             name="recentProjects"
             value={form.recentProjects}
@@ -87,15 +93,17 @@ export function FormFreelancer() {
             Quais são as suas principais habilidades?
           </label>
           <input
+            maxlength="128"
             id="skills"
             name="skills"
             value={form.skills}
             onChange={handleChange}
           />
           <label htmlFor="interest">
-            Quais são seus interesses futuros e objetivos?
+            Quais são seus interesses e objetivos futuros?
           </label>
           <input
+            maxlength="64"
             id="interest"
             name="interest"
             value={form.interest}
@@ -103,6 +111,7 @@ export function FormFreelancer() {
           />
           <label htmlFor="contact">Seu contato:</label>
           <input
+            maxlength="64"
             id="contact"
             name="contact"
             value={form.contact}
@@ -111,9 +120,16 @@ export function FormFreelancer() {
 
           <label htmlFor="img">Link da foto para seu perfil:</label>
           <input id="img" name="img" value={form.img} onChange={handleChange} />
-          <button type="submit">Cadastre seu Perfil !</button>
+          <button type="submit">
+            <span>Cadastre seu Perfil !</span>
+          </button>
         </div>
       </form>
-    </>
+      <img
+        src={formJobsImg}
+        className={styles.formImg}
+        alt="img ilustrativa formulário"
+      />
+    </div>
   );
 }
