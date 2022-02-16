@@ -2,6 +2,7 @@ import styles from "./FormEmployer.module.css";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import formProjectsImg from "../../assets/projectImg.png";
 
 export function FormEmployer() {
   const goTo = useNavigate();
@@ -40,21 +41,22 @@ export function FormEmployer() {
   }
 
   return (
-    <>
-      <h1 className={styles.title}>Cadastre sua vaga:</h1>
+    <div className={styles.divPage}>
       <form onSubmit={handleSubmit}>
         <div className={styles.form}>
+          <h2 className={styles.title}>Preencha seu cadastro:</h2>
           <label htmlFor="nameProject">Nome do projeto:</label>
           <input
+            maxlength="32"
             id="nameProject"
             placeholder="Project Name"
             name="nameProject"
             value={form.nameProject}
             onChange={handleChange}
           />
-
           <label htmlFor="area">Segmento</label>
           <input
+            maxlength="32"
             id="area"
             placeholder="segmento"
             name="area"
@@ -63,20 +65,20 @@ export function FormEmployer() {
           />
           <label htmlFor="description">Descrição</label>
           <input
+            maxlength="64"
             id="description"
             placeholder="Breve descrição"
             name="description"
             value={form.description}
             onChange={handleChange}
           />
-
           <label htmlFor="startDate">Data</label>
           <input
             id="startDate"
+            type="date"
             placeholder="Data"
             name="startDate"
             value={form.startDate}
-            //type="radio"
             onChange={handleChange}
           />
           <label htmlFor="budget">Orçamento</label>
@@ -84,14 +86,15 @@ export function FormEmployer() {
             id="budget"
             placeholder="US$0,00"
             name="budget"
-            type= "number"
-            step= "0.01"
-            min= "1"
+            type="number"
+            step="0.01"
+            min="1"
             value={form.budget}
             onChange={handleChange}
           />
           <label htmlFor="details">Detalhamento</label>
           <input
+            maxlength="128"
             id="details"
             placeholder="Detalhe aqui sua vaga"
             name="details"
@@ -100,6 +103,7 @@ export function FormEmployer() {
           />
           <label htmlFor="contact">Contato:</label>
           <input
+            maxlength="64"
             id="contact"
             placeholder="Endereço de e-mail"
             name="contact"
@@ -108,9 +112,16 @@ export function FormEmployer() {
           />
           <label htmlFor="img">Link para logo ou imagem de seu projeto:</label>
           <input id="img" name="img" value={form.img} onChange={handleChange} />
-          <button type="submit">Cadastre sua vaga!</button>
+          <button type="submit">
+            <span>Cadastre seu Projeto!</span>
+          </button>
         </div>
       </form>
-    </>
+      <img
+        src={formProjectsImg}
+        className={styles.formImg}
+        alt="img ilustrativa formulário"
+      />
+    </div>
   );
 }

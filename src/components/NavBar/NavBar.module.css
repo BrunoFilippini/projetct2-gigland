@@ -1,114 +1,115 @@
 @import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@media screen and (min-width: 1200px) {
+  /* FLEX DA NAVBAR */
+  .noShow {
+    display: none;
+  }
 
-/* FLEX DA NAVBAR */
-.noShow {
-  display: none;
-}
+  .navBarAll {
+    background-color: black;
+    display: flex;
+  }
 
-.navBarAll {
-  background-color: black;
-  display: flex;
-}
+  .searchBar {
+    color: white;
+    padding-right: 100px;
+  }
 
-.searchBar {
-  color: white;
-  padding-right: 100px;
-}
+  /* LOGO */
+  .logoGigLand {
+    width: 100px;
+    margin: 0 50px 0 20px;
+  }
 
-/* LOGO */
-.logoGigLand {
-  width: 100px;
-  margin-left: 20px;
-}
+  /* DIV COM TODOS OS BOTOES, APENAS PARA ESPAÇAMENTO */
+  .allbuttonsSpace {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10% 0 20px;
+  }
 
-/* DIV COM TODOS OS BOTOES, APENAS PARA ESPAÇAMENTO */
-.allbuttonsSpace {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 100px 0 20px;
-}
+  /* DIV COM OS BOTOES PARA AS LISTAS DE FREELAS E PROJETOS */
+  .buttonsLinksLists {
+    display: flex;
+    width: 11%;
+    justify-content: space-evenly;
+  }
 
-/* DIV COM OS BOTOES PARA AS LISTAS DE FREELAS E PROJETOS */
-.buttonsLinksLists {
-  display: flex;
-  width: 11%;
-  justify-content: space-evenly;
-}
+  /* CADA BOTÃO SEPARADO DA DIV DE CIMA */
+  .buttonsLinksLists button {
+    padding: 12px 14px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    position: relative;
+  }
 
-/* CADA BOTÃO SEPARADO DA DIV DE CIMA */
-.buttonsLinksLists button {
-  padding: 12px 14px;
-  text-decoration: none;
-  color: black;
-  border: 2px solid black;
-  letter-spacing: 1px;
-  position: relative;
-}
+  .buttonsLinksLists button span {
+    position: relative;
+    z-index: 2;
+  }
 
-.buttonsLinksLists button span {
-  position: relative;
-  z-index: 2;
-}
+  .buttonsLinksLists button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all 0.35s;
+  }
 
-.buttonsLinksLists button:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #ff003b;
-  transition: all 0.35s;
-}
+  .buttonsLinksLists button:hover {
+    color: #fff;
+  }
 
-.buttonsLinksLists button:hover {
-  color: #fff;
-}
+  .buttonsLinksLists button:hover:after {
+    width: 100%;
+  }
 
-.buttonsLinksLists button:hover:after {
-  width: 100%;
-}
+  /* DIV COM OS BOTOES PARA OS FORMULARIOS */
+  .buttonsLinksForm {
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+  }
 
-/* DIV COM OS BOTOES PARA OS FORMULARIOS */
-.buttonsLinksForm {
-  display: flex;
-  width: 20%;
-  justify-content: space-evenly;
-}
+  /* CADA BOTÃO SEPARADO DA DIV DE CIMA DOS FORMULARIOS */
+  .buttonsLinksForm button {
+    width: 200px;
+    padding: 12px 14px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    position: relative;
+  }
 
-/* CADA BOTÃO SEPARADO DA DIV DE CIMA DOS FORMULARIOS */
-.buttonsLinksForm button {
-  width: 200px;
-  padding: 12px 14px;
-  text-decoration: none;
-  color: black;
-  border: 2px solid black;
-  letter-spacing: 1px;
-  position: relative;
-}
+  .buttonsLinksForm button span {
+    position: relative;
+    z-index: 2;
+  }
 
-.buttonsLinksForm button span {
-  position: relative;
-  z-index: 2;
-}
+  .buttonsLinksForm button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: orange;
+    transition: all 0.35s;
+  }
 
-.buttonsLinksForm button:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: orange;
-  transition: all 0.35s;
-}
+  .buttonsLinksForm button:hover {
+    color: #fff;
+  }
 
-.buttonsLinksForm button:hover {
-  color: #fff;
-}
-
-.buttonsLinksForm button:hover:after {
-  width: 100%;
+  .buttonsLinksForm button:hover:after {
+    width: 100%;
+  }
 }

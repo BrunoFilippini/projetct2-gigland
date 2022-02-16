@@ -2,8 +2,6 @@ import { Link, useLocation } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import logoGigLand from "../../assets/giglandlogo.png";
 
-import { SearchBar } from "../SearchBar/SearchBar";
-
 export function NavBar() {
   const location = useLocation();
 
@@ -36,8 +34,6 @@ export function NavBar() {
               </button>
             </Link>
           </div>
-          
-        {/* <h1 className={styles.SearchBar}> <SearchBar /></h1> */} 
 
           <div className={styles.buttonsLinksForm}>
             <Link to="/FormFreelancer">
