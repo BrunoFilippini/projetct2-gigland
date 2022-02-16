@@ -18,7 +18,6 @@ export function Employers() {
         setEmployer([...result.data]);
 
         setBackup([...result.data]);
-
       } catch (error) {
         console.error(error);
       }
@@ -34,18 +33,18 @@ export function Employers() {
       return;
     }
 
-  
     const filtered = employer.filter((currentEmployer) => {
-      return currentEmployer.area.toLowerCase().includes(searchParams.toLowerCase()) || currentEmployer.budget.toLowerCase().includes(searchParams.toLowerCase())
-    }
- 
-    );
+      return (
+        currentEmployer.area
+          .toLowerCase()
+          .includes(searchParams.toLowerCase()) ||
+        currentEmployer.budget
+          .toLowerCase()
+          .includes(searchParams.toLowerCase())
+      );
+    });
 
-  
     setEmployer(filtered);
-  
-   
-    
   }
 
   return (
@@ -55,7 +54,6 @@ export function Employers() {
       <SearchBar filterAPI={filterEmployer} />
 
       <div className={styles["grid-container"]}>
-
         {employer.map((currentEmployer) => {
           return (
             <CardEmployer
@@ -73,13 +71,7 @@ export function Employers() {
             />
           );
         })}
-
-        </>
-  )
-  
-}
       </div>
     </div>
   );
 }
-
