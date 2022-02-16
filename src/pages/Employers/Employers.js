@@ -1,3 +1,4 @@
+import styles from "./Employers.module.css";
 import { CardEmployer } from "../../components/CardEmployer/CardEmployer";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -48,9 +49,13 @@ export function Employers() {
   }
 
   return (
-    <>
+    <div className={styles.main}>
       <h1>Employers</h1>
+
       <SearchBar filterAPI={filterEmployer} />
+
+      <div className={styles["grid-container"]}>
+
         {employer.map((currentEmployer) => {
           return (
             <CardEmployer
@@ -68,7 +73,13 @@ export function Employers() {
             />
           );
         })}
+
         </>
   )
   
 }
+      </div>
+    </div>
+  );
+}
+

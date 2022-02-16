@@ -1,4 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+
 /* FLEX DA NAVBAR */
+.noShow {
+  display: none;
+}
+
 .navBarAll {
   background-color: black;
   display: flex;
@@ -9,10 +15,10 @@
   padding-right: 100px;
 }
 
-/* TAMANHO DA IMAGEM */
-.logoImg {
-  height: 60px;
-  padding: 5px;
+/* LOGO */
+.logoGigLand {
+  width: 100px;
+  margin-left: 20px;
 }
 
 /* DIV COM TODOS OS BOTOES, APENAS PARA ESPAÇAMENTO */
@@ -21,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px 0 30px;
+  padding: 0 100px 0 20px;
 }
 
 /* DIV COM OS BOTOES PARA AS LISTAS DE FREELAS E PROJETOS */

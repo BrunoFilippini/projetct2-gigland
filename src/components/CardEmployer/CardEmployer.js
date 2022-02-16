@@ -1,5 +1,6 @@
 import axios from "axios";
 import { Link } from "react-router-dom";
+import styles from "./CardEmployer.module.css";
 
 export function CardEmployer(props) {
   async function handleDelete() {
@@ -14,24 +15,28 @@ export function CardEmployer(props) {
   }
 
   return (
-    <div>
-      <img src={props.img} alt={`Foto de ${props.nameProject}`} />
-      <div>
-        <h5>{props.nameProject}</h5>
-        <p>{`Área: ${props.area}`}</p>
-        <p>{`Descrição: ${props.description}`}</p>
-        <p>{`Data de início: ${props.startDate}`}</p>
-        <p>{`Budget: ${props.budget}`}</p>
-        <p>{`Detalhes: ${props.details}`}</p>
-        <p>{`Contato: ${props.contact}`}</p>
+    <div className={styles.cards}>
+      <div className={styles.cardsItem}>
+        <div className ={styles.card}>
+          <img className = {styles.imgPerson} src={props.img} alt={`Foto de ${props.nameProject}`} />
+          <div className={styles.cardContent}>
+            <h2 className={styles.cardTitle}>{props.nameProject}</h2>
+            <p className={styles.cardText}>{`Área: ${props.area}`}</p>
+            <p className={styles.cardText}>{`Descrição: ${props.description}`}</p>
+            <p className={styles.cardText}>{`Data de início: ${props.startDate}`}</p>
+            <p className={styles.cardText}>{`Budget: ${props.budget}`}</p>
+            <p className={styles.cardText}>{`Detalhes: ${props.details}`}</p>
+            <p className={styles.cardText}>{`Contato: ${props.contact}`}</p>
 
-        <Link to={`/edit-employer/${props.id}`}>
-          <button type="button">Editar Perfil</button>
-        </Link>
+            <Link className={styles.textLink} to={`/edit-employer/${props.id}`}>
+              <button type="button" className={styles.btn}>Editar Perfil</button>
+            </Link>
 
-        <button type="button" onClick={handleDelete}>
-          Deletar Perfil
-        </button>
+            <button type="button" onClick={handleDelete} className={styles.btn}>
+              Deletar Perfil
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,16 +1,24 @@
-import { Link } from "react-router-dom";
-import logo from "../../assets/gigland2.png";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./NavBar.module.css";
+import logoGigLand from "../../assets/giglandlogo.png";
 
 import { SearchBar } from "../SearchBar/SearchBar";
 
 export function NavBar() {
+  const location = useLocation();
+
   return (
     <>
-      <nav className={styles.navBarAll}>
+      <nav
+        className={location.pathname === "/" ? styles.noShow : styles.navBarAll}
+      >
         <div>
           <Link to="/">
-            <img className={styles.logoImg} src={logo} alt="Imagem Logo" />
+            <img
+              className={styles.logoGigLand}
+              src={logoGigLand}
+              alt="Logo Gigland"
+            />
           </Link>
         </div>
 
