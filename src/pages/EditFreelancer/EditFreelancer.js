@@ -59,7 +59,7 @@ export function EditFreelancer() {
 
   return (
     <>
-      <h1>Atualize seu cadastro:</h1>
+      <h1 className={styles.title}>Atualize seu cadastro:</h1>
       <form onSubmit={handleSubmit}>
         <div className={styles.form}>
           <label htmlFor="freelancerName">Nome: </label>
