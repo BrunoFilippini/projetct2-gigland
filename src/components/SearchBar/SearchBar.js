@@ -2,10 +2,12 @@ export function SearchBar(props) {
   return (
     <input
       type="text"
+      area="searchParams"
       className="input search-bar"
-      name="search"
-      placeholder="Search"
-      //onKeyUp={(event) => props.filterGigs(event.target.value)}
+      placeholder="Find talent"
+      onKeyUp={(event) => {
+        props.filterAPI(event.target.value);
+      }}
     />
   );
 }

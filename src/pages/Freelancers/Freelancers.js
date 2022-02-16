@@ -1,10 +1,12 @@
 import { CardFreelancer } from "../../components/CardFreelancer/CardFreelancer";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { SearchBar } from "../../components/SearchBar/SearchBar";
 
 export function Freelancers() {
   const [freelancer, setFreelancer] = useState([]);
   const [rerender, setRerender] = useState(true);
+  const [backup, setBackup] = useState([]);
 
   useEffect(() => {
     async function fetchFreelancer() {
@@ -13,6 +15,9 @@ export function Freelancers() {
           "https://ironrest.herokuapp.com/giglandFreelas"
         );
         setFreelancer([...result.data]);
+
+        setBackup([...result.data]);
+
       } catch (error) {
         console.error(error);
       }
@@ -22,9 +27,30 @@ export function Freelancers() {
     setRerender(false);
   }, [rerender]);
 
+  function filterFreelancer(searchParams) {
+    if (searchParams === "") {
+      setFreelancer([...backup]);
+      return;
+    }
+
+  
+    const filtered = freelancer.filter((currentFreelancer) => {
+      return currentFreelancer.profession.toLowerCase().includes(searchParams.toLowerCase()) || currentFreelancer.skills.toLowerCase().includes(searchParams.toLowerCase()) || currentFreelancer.education.toLowerCase().includes(searchParams.toLowerCase())
+    }
+ 
+    );
+
+  
+    setFreelancer(filtered);
+  
+   
+    
+  }
+
   return (
     <>
       <h1>Freelancers</h1>
+      <SearchBar filterAPI={filterFreelancer} />
       {freelancer.map((currentFreelancer) => {
         return (
           <CardFreelancer
