@@ -41,7 +41,7 @@ export function FormEmployer() {
 
   return (
     <>
-      <h1>Cadastre sua vaga:</h1>
+      <h1 className={styles.title}>Cadastre sua vaga:</h1>
       <form onSubmit={handleSubmit}>
         <div className={styles.form}>
           <label htmlFor="nameProject">Nome do projeto:</label>
