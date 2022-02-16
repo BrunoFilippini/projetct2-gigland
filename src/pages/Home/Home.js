@@ -1,23 +1,32 @@
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
-import logoGig from "../../assets/gigland2.png";
+import logoGigLand from "../../assets/giglandlogo.png";
+
+import coverHome from "../../assets/coverHome.png";
 
 export function Home() {
   return (
-    <div className={styles.bgImg}>
-      <div className={styles.logo}>
-        <img src={logoGig} className={styles.logoGig} alt="Gig Land Cover" />
-      </div>
+    <>
+      <div className={styles.bgColor}>
+        <div className={styles.buttons}>
+          <Link to="/Freelancers">
+            <span className={styles.btnFreelancer}>Freelancers</span>
+          </Link>
 
-      <div className={styles.buttons}>
-        <Link to="/Freelancers">
-          <span className={styles.btnFreelancer}>Freelancers</span>
-        </Link>
+          <Link to="/Employers">
+            <span className={styles.btnEmployer}>Employers</span>
+          </Link>
+        </div>
 
-        <Link to="/Employers">
-          <span className={styles.btnEmployer}>Employers</span>
-        </Link>
+        <div className={styles.logoAndimgBg}>
+          <img
+            className={styles.logoGigLand}
+            src={logoGigLand}
+            alt="Logo Gigland"
+          />
+          <img className={styles.bgImg} src={coverHome} alt="" />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
