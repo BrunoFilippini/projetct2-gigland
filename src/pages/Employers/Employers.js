@@ -73,11 +73,6 @@ export function Employers() {
             />
           );
         })}
-
-        </>
-  )
-  
-}
       </div>
     </div>
   );
