@@ -1,4 +1,8 @@
 /* FLEX DA NAVBAR */
+.noShow {
+  display: none;
+}
+
 .navBarAll {
   background-color: black;
   display: flex;

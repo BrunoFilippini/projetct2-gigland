@@ -1,31 +1,55 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:900i");
 
-.bgImg {
-  background-color: #fff;
-  background-image: url(../../assets/coverHome.png);
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+
+.bgColor {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background-size: 50%;
-  background-position: center;
+  /*   background-image: linear-gradient(
+    230deg,
+    hsl(57deg 100% 87%) 0%,
+    hsl(58deg 100% 94%) -1%,
+    hsl(0deg 0% 100%) 68%
+  ); */
+  background-image: linear-gradient(
+    140deg,
+    hsl(222deg 100% 28%) 0%,
+    hsl(233deg 85% 26%) 5%,
+    hsl(238deg 78% 16%) 26%,
+    hsl(0deg 0% 0%) 100%
+  );
+}
+
+.logoAndimgBg {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoGig {
+  font-family: "Chewy", cursive;
+  font-size: 8rem;
+  color: rgb(171, 184, 0);
+}
+
+.bgImg {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 40%;
   background-repeat: no-repeat;
 }
 
-.logo {
-  height: 10%;
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-}
-
 .buttons {
-  height: 100%;
+  position: relative;
+  top: 60%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: -100px 200px 0 200px;
+  justify-content: space-around;
+  margin: 0 -300px 0 -300px;
 }
 
 /* remove underlinne dos links  */
@@ -43,7 +67,7 @@
   );
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
-  padding: 1rem 4rem;
+  padding: 1rem 4.4rem;
   color: #000000;
   text-decoration: none;
   border-radius: 8px;
