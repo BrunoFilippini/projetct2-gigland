@@ -1,96 +1,22 @@
-/* @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-
-
-.cards {
-    font-family: 'Quicksand', serif;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0; 
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    width: 400px;
-    min-height: 80px; 
-}
-
-
-.card:hover {
-    /* box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4); */
-    /* transform: scale(1.01);
-} */
-
-/* .cardsItem{
-    display: flex;
-    padding: 1rem;
-    @media(min-width: 40rem) {
-      width: 50%;
-    }
-    @media(min-width: 56rem) {
-      width: 33.3333%;
-    }
-} */
-
-/* .card {
-    background-color: white;
-    border-radius: 0.25rem;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  } */
-
-/* .cardTitle{
-    color: black;
-    font-size: 1.1rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    margin: 0px;
-    margin-bottom: 1.5rem; 
-} */
-/* 
-.cardText{
-    color: black;
-    margin-bottom: 0.5rem;    
-    font-weight: 400;
-} */
-
-/* .cardContent{
-    padding: 1rem;
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    padding: 1rem;
-    background: linear-gradient(to bottom left, #7c7d7ee3 40%, #d7d0cb 100%);
-} */
-
-/* .imgPerson {
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-
-} */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 .btn {
-    color: black;
+    color: white;
     margin-top: 5px;
     margin-right: 5px;
     cursor: pointer;
-    border: 1px solid black;
-    background: transparent;
+    border: 1px solid silver;
+    background: silver;
     justify-content: center;
     width: 40%;
     height: 40%;
+    border-radius: 8px;
 
 } 
   
 .btn:hover {
-    background-color: rgba(255, 255, 255, 0.12);
+    background: white;
+    color: black;
 } 
 
 .textLink{
@@ -98,47 +24,16 @@
     text-decoration: inherit;
 }
 
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
- :root {
-    --light-bg: white;
-    --light-primary: rgb(247, 249, 250);
-
-    --dark-bg: black;
-    --dark-primary: #15181c;
-
-    --gray-text: rgb(153, 153, 153);
-
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-}
-* {
-    box-sizing: border-box;
-}
-
 .light-theme {
-    --background-color: var(--light-bg);
-    --primary-bg: var(--light-primary);
+    --background-color: white;
+    --primary-bg: rgb(247, 249, 250);
     color: black;
 }
 .dark-theme {
-    --background-color: var(--dark-bg);
-    --primary-bg: var(--dark-primary);
+    --background-color: black;
+    --primary-bg: black;
     color: white;
 }
-
-body {
-    background-color: var(--background-color);
-    padding: 16px;
-}
-
-.main {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-
-
 
 .themer {
     all: unset;
@@ -149,10 +44,10 @@ body {
     position: relative;
 }
 .light-theme .themer {
-    border: 2px solid var(--dark-bg);
+    border: 2px solid black;
 }
 .dark-theme .themer {
-    border: 2px solid var(--light-bg);
+    border: 2px solid white;
 }
 .themer:hover {
     cursor: pointer;
@@ -167,18 +62,18 @@ body {
     top: 4px;
 }
 .light-theme .themer::after {
-    background-color: var(--dark-bg);
+    background-color: black;
     right: 4px;
 }
 .dark-theme .themer::after {
-    background-color: var(--light-bg);
+    background-color: white;
     left: 4px;
 }
 
 
 
 .profile {
-    background-color: var(--primary-bg);
+    background-color: white;
     border-radius: 8px;
     height: 180px;
     width: 350px;
@@ -190,6 +85,11 @@ body {
     display: inline-block;
     margin: 8px;
     vertical-align: top;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+
 }
 
 .profile:hover {
@@ -198,14 +98,14 @@ body {
 .profile.profile--expanded {
     height: 425px;
     animation: expand 0.5s ease;
-    background-color:aqua;
+    background-color: white;
 }
 
 .profileBanner {
     display: block;
     height: 70px;
     width: 100%;
-    background-color: rgb(175, 105, 175);
+    background-color: silver;
     border-top-right-radius: inherit;
     border-top-left-radius: inherit;
 }
@@ -243,7 +143,7 @@ body {
     font-weight: bold;
 }
 .profileInfoUsername {
-    color: var(--gray-text);
+    color: rgb(153, 153, 153);
 }
 
 .profileData {
@@ -270,18 +170,6 @@ body {
     opacity: 1;
     animation: reveal 0.7s ease;
 }
-
-/* .profileData > * > * {
-    display: block;
-}
-.profileData > * > *:first-child {
-    font-size: 1.2rem;
-
-}
-
-.profileDataStartDate{
-    font-size: 1.2rem;
-} */
 
 .profileDataFollowing{
     color:#15181c;
