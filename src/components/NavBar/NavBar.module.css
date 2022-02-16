@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+
 /* FLEX DA NAVBAR */
 .noShow {
   display: none;
@@ -13,10 +15,12 @@
   padding-right: 100px;
 }
 
-/* TAMANHO DA IMAGEM */
-.logoImg {
-  height: 60px;
-  padding: 5px;
+/* LOGO */
+.logo {
+  font-family: "Chewy", cursive;
+  font-size: 3rem;
+  padding-left: 20px;
+  color: rgb(171, 184, 0);
 }
 
 /* DIV COM TODOS OS BOTOES, APENAS PARA ESPAÇAMENTO */
