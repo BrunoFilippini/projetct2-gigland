@@ -16,11 +16,9 @@
 }
 
 /* LOGO */
-.logo {
-  font-family: "Chewy", cursive;
-  font-size: 3rem;
-  padding-left: 20px;
-  color: rgb(171, 184, 0);
+.logoGigLand {
+  width: 100px;
+  margin-left: 20px;
 }
 
 /* DIV COM TODOS OS BOTOES, APENAS PARA ESPAÇAMENTO */
@@ -29,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px 0 30px;
+  padding: 0 100px 0 20px;
 }
 
 /* DIV COM OS BOTOES PARA AS LISTAS DE FREELAS E PROJETOS */

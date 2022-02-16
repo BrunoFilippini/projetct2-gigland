@@ -24,15 +24,13 @@
 .logoAndimgBg {
   display: flex;
   justify-content: center;
-
   flex-direction: column;
   align-items: center;
 }
 
-.logoGig {
-  font-family: "Chewy", cursive;
-  font-size: 8rem;
-  color: rgb(171, 184, 0);
+.logoGigLand {
+  width: 20%;
+  margin-top: -50px;
 }
 
 .bgImg {

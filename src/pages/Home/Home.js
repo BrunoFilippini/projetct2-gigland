@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
+import logoGigLand from "../../assets/giglandlogo.png";
 
 import coverHome from "../../assets/coverHome.png";
 
@@ -18,7 +19,11 @@ export function Home() {
         </div>
 
         <div className={styles.logoAndimgBg}>
-          <h1 className={styles.logoGig}>GigLand</h1>
+          <img
+            className={styles.logoGigLand}
+            src={logoGigLand}
+            alt="Logo Gigland"
+          />
           <img className={styles.bgImg} src={coverHome} alt="" />
         </div>
       </div>

@@ -1,5 +1,6 @@
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./NavBar.module.css";
+import logoGigLand from "../../assets/giglandlogo.png";
 
 export function NavBar() {
   const location = useLocation();
@@ -11,7 +12,11 @@ export function NavBar() {
       >
         <div>
           <Link to="/">
-            <h1 className={styles.logo}>GigLand</h1>
+            <img
+              className={styles.logoGigLand}
+              src={logoGigLand}
+              alt="Logo Gigland"
+            />
           </Link>
         </div>
 
