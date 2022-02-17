@@ -40,14 +40,15 @@ export function CardFreelancer(props) {
             <span className={styles.profileInfoUsername}>
               {props.profession}
             </span>
+            <span className={styles.profileInfoUsernameB}>
+              <b>
+                <i>{props.branding}</i>
+              </b>
+            </span>
           </div>
         </div>
         <div className={styles.profileData}>
           <span className={styles.profileDataFollowing}>
-            <p className={styles.profileDataDescription}>
-              <b>Descrição: </b>
-              {props.branding}
-            </p>
             <p className={styles.profileDataStartDate}>
               <b>Formação: </b>
               {props.education}
