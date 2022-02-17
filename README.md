@@ -26,4 +26,4 @@ Recruiters looking to fill vacancies or offer gig work create profile for their 
 
 ## Visit GigLand
 
-You can find _GigLand_ [here](https://github.com/BrunoFilippini/projetct2-gigland).
+You can find _GigLand_ [here](https://gigland.netlify.app/).
