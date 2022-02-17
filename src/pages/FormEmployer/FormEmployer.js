@@ -98,7 +98,6 @@ export function FormEmployer() {
             id="details"
             placeholder="Detalhe aqui sua vaga"
             name="details"
-            maxLength={50}
             type="text"
             value={form.details}
             onChange={handleChange}
