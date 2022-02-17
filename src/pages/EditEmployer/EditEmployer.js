@@ -131,7 +131,7 @@ export function EditEmployer() {
           <label htmlFor="img">Link para logo ou imagem de seu projeto:</label>
           <input id="img" name="img" value={form.img} onChange={handleChange} />
           <button type="submit">
-            <span>Editar Perfil</span>
+            <span>Editar Projeto</span>
           </button>
         </div>
       </form>
