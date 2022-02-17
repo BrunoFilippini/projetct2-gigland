@@ -24,54 +24,6 @@
         text-decoration: inherit;
     }
 
-    .light-theme {
-        --background-color: white;
-        --primary-bg: rgb(247, 249, 250);
-        color: black;
-    }
-    .dark-theme {
-        --background-color: black;
-        --primary-bg: black;
-        color: white;
-    }
-
-    .themer {
-        all: unset;
-        padding: 4px;
-        height: 20px;
-        width: 40px;
-        border-radius: 20px;
-        position: relative;
-    }
-    .light-theme .themer {
-        border: 2px solid black;
-    }
-    .dark-theme .themer {
-        border: 2px solid white;
-    }
-    .themer:hover {
-        cursor: pointer;
-    }
-    .themer::after {
-        content: '';
-        display: block;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        position: absolute;
-        top: 4px;
-    }
-    .light-theme .themer::after {
-        background-color: black;
-        right: 4px;
-    }
-    .dark-theme .themer::after {
-        background-color: white;
-        left: 4px;
-    }
-
-
-
     .profile {
         background-color: white;
         border-radius: 8px;
@@ -118,7 +70,7 @@
     }
 
     .profilePic img {
-        background-color: var(--primary-bg);
+        background-color: white;
         border-radius: 50%;
         height: 80px;
         width: 80px;
@@ -177,5 +129,14 @@
         font-size: 1rem;;
         line-height: 1.5;
         align-items: flex-start;
+        margin-right: 10px;
+        justify-content: center;
+    }
+
+    main {
+        height: 100%;
+        text-align: center;
+        padding: 16px;
+        display: flex;
     }
 }
