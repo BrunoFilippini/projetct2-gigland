@@ -49,10 +49,8 @@ export function Employers() {
 
   return (
     <div className={styles.main}>
-      <h1>Employers</h1>
-
+      <h1 className={styles.h1Free}>Employers</h1>
       <SearchBar filterAPI={filterEmployer} />
-
       <div className={styles["grid-container"]}>
         {employer.map((currentEmployer) => {
           return (
