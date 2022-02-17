@@ -61,7 +61,7 @@ export function CardEmployer(props) {
               {props.details}
             </p>
             <p className={styles.profileDataContact}>
-              <b>Contato: </b> ${props.contact}
+              <b>Contato: </b> {props.contact}
             </p>
             <Link className={styles.textLink} to={`/edit-employer/${props.id}`}>
               <button type="button" className={styles.btn}>

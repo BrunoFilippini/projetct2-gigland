@@ -53,7 +53,7 @@ export function CardFreelancer(props) {
               {props.education}
             </p>
             <p className={styles.profileDataBudget}>
-              <b>Projetos recentes: </b> ${props.recentProjects}
+              <b>Projetos recentes: </b> {props.recentProjects}
             </p>
             <p className={styles.profileDataStartDetails}>
               <b>Habilidades: </b>
@@ -64,7 +64,7 @@ export function CardFreelancer(props) {
               {props.interest}
             </p>
             <p className={styles.profileDataContact}>
-              <b>Contato: </b> ${props.contact}
+              <b>Contato: </b> {props.contact}
             </p>
             <Link
               className={styles.textLink}
