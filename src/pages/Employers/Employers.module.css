@@ -10,5 +10,10 @@
     flex-direction: row;
     flex-wrap: nowrap;
   }
+  .main {
+    
+    justify-content: space-between;
+    
+  }
 }
 

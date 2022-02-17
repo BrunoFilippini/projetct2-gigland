@@ -1,0 +1,19 @@
+.searchBar {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: none;
+  width: 600px;
+  height: 45px;
+  margin-right: 10px;
+  margin-left: 400px;
+ 
+
+  font-family: "Roboto", sans-serif;
+}
+
+.generalBar {
+  /*background-color: pink;*/
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
