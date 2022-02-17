@@ -18,7 +18,7 @@ export function CardEmployer(props) {
   }
 
   return (
-    <>
+    <div className={styles.main}>
       <div
         className={`${styles.profile} ${
           expanded ? styles["profile--expanded"] : styles["profile--unexpanded"]
@@ -75,6 +75,6 @@ export function CardEmployer(props) {
           </span>
         </div>
       </div>
-    </>
+    </div>
   );
 }
