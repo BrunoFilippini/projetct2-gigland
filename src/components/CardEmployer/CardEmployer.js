@@ -67,7 +67,6 @@ export function CardEmployer(props) {
                 Editar Perfil
               </button>
             </Link>
-
             <button type="button" onClick={handleDelete} className={styles.btn}>
               Deletar Perfil
             </button>

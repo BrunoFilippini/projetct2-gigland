@@ -1,5 +1,8 @@
 # GigLand
 
+![GigLand logo](https://github.com/BrunoFilippini/projetct2-gigland/blob/main/src/assets/giglandlogo.png)
+<br>
+
 A new way to land a new gig! A new way to offer gigs!
 
 Remember those old websites that demanded hundreds of words to fill out a profile that got in the way of people getting hired or finding a professional to hire? Well, forget them! GigLand is the new online spot to find or offer a gig!
@@ -16,10 +19,10 @@ Recruiters looking to fill vacancies or offer gig work create profile for their 
 
 ## About the devs
 
-- Bruno is a beginner in programming and loves technology and its
+- [Bruno](https://www.linkedin.com/in/bruno-filippini/) is a beginner in programming and loves technology and its
   possibilities.
 - [Joe](https://github.com/jdc212) is a coding candidate currently learning JavaScript, HTML/CSS. He's into media and tech.
-- Larissa is a catwoman and a full-stack developer.
+- [Larissa](https://github.com/gilgameshr3rr) is a catwoman and a full-stack developer.
 
 ## Visit GigLand
 

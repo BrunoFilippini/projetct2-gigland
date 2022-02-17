@@ -65,7 +65,7 @@ export function CardFreelancer(props) {
               {props.interest}
             </p>
             <p className={styles.profileDataContact}>
-              <b>Contato: </b> ${props.contact}
+              <b>Contato: </b> {props.contact}
             </p>
             <Link
               className={styles.textLink}
