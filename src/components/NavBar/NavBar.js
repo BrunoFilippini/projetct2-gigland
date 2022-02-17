@@ -10,6 +10,25 @@ export function NavBar() {
       <nav
         className={location.pathname === "/" ? styles.noShow : styles.navBarAll}
       >
+        
+      <div className={styles.alignment}>
+          <div className={styles.buttonsLinksLists}>
+            <Link to="/Freelancers">
+              <button>
+                <span>Freelancers</span> 
+              </button>
+            </Link>
+        </div>
+
+          <div className={styles.buttonsLinksForm}>
+            <Link to="/FormFreelancer">
+              <button>
+                <span>Cadastre seu Perfil</span>
+              </button>
+            </Link>
+          </div>
+      </div>
+
         <div>
           <Link to="/">
             <img
@@ -20,14 +39,8 @@ export function NavBar() {
           </Link>
         </div>
 
-        <div className={styles.allbuttonsSpace}>
-          <div className={styles.buttonsLinksLists}>
-            <Link to="/Freelancers">
-              <button>
-                <span>Freelancers</span>
-              </button>
-            </Link>
-
+      <div className={styles.alignment}>
+          <div className={styles.buttonsLinksListsEmployer}>
             <Link to="/Employers">
               <button>
                 <span>Employers</span>
@@ -35,20 +48,15 @@ export function NavBar() {
             </Link>
           </div>
 
-          <div className={styles.buttonsLinksForm}>
-            <Link to="/FormFreelancer">
-              <button>
-                <span>Cadastre seu Perfil</span>
-              </button>
-            </Link>
-
+          <div className={styles.buttonsLinksFormEmployer}>
             <Link to="/FormEmployer">
               <button>
                 <span>Cadastre seu Projeto</span>
               </button>
             </Link>
           </div>
-        </div>
+      </div>
+
       </nav>
     </>
   );
