@@ -16,10 +16,10 @@ Recruiters looking to fill vacancies or offer gig work create profile for their 
 
 ## About the devs
 
-- Bruno is a beginner in programming and loves technology and its
+- [Bruno](https://www.linkedin.com/in/bruno-filippini/) is a beginner in programming and loves technology and its
   possibilities.
 - [Joe](https://github.com/jdc212) is a coding candidate currently learning JavaScript, HTML/CSS. He's into media and tech.
-- Larissa is a catwoman and a full-stack developer.
+- [Larissa] (https://github.com/gilgameshr3rr) is a catwoman and a full-stack developer.
 
 ## Visit GigLand
 
