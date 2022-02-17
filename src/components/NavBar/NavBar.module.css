@@ -65,6 +65,7 @@
 
   .buttonsLinksLists button:hover {
     color: #fff;
+    cursor: pointer;
   }
 
   .buttonsLinksLists button:hover:after {
@@ -107,6 +108,7 @@
 
   .buttonsLinksForm button:hover {
     color: #fff;
+    cursor: pointer;
   }
 
   .buttonsLinksForm button:hover:after {

@@ -37,9 +37,7 @@ export function CardEmployer(props) {
             />
           </div>
           <div className={styles.profileInfo}>
-            <span className={styles.profileInfoDisplay}>
-              {props.nameProject}
-            </span>
+            <span className={styles.profileName}>{props.nameProject}</span>
             <span className={styles.profileInfoUsername}>{props.area}</span>
           </div>
         </div>
@@ -61,14 +59,14 @@ export function CardEmployer(props) {
               {props.details}
             </p>
             <p className={styles.profileDataContact}>
-              <b>Contato: </b> {props.contact}
+              <b>Contato: </b>
+              {props.contact}
             </p>
             <Link className={styles.textLink} to={`/edit-employer/${props.id}`}>
               <button type="button" className={styles.btn}>
                 Editar Perfil
               </button>
             </Link>
-
             <button type="button" onClick={handleDelete} className={styles.btn}>
               Deletar Perfil
             </button>
