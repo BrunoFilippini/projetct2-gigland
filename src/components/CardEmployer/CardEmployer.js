@@ -30,7 +30,11 @@ export function CardEmployer(props) {
         <div className={styles.profileBanner}></div>
         <div>
           <div className={styles.profilePic}>
-            <img className={styles.imgPerson} src={props.img} alt={`Foto de ${props.nameProject}`}/>
+            <img
+              className={styles.imgPerson}
+              src={props.img}
+              alt={`Foto de ${props.nameProject}`}
+            />
           </div>
           <div className={styles.profileInfo}>
             <span className={styles.profileInfoDisplay}>
@@ -41,13 +45,28 @@ export function CardEmployer(props) {
         </div>
         <div className={styles.profileData}>
           <span className={styles.profileDataFollowing}>
-            <p className={styles.profileDataDescription}><b>Descrição: </b>{props.description}</p>
-            <p className={styles.profileDataStartDate}><b>Data de início: </b>{props.startDate}</p>
-            <p className={styles.profileDataBudget}><b>Budget: </b> ${props.budget}</p>
-            <p className={styles.profileDataStartDetails}><b>Detalhes: </b>{props.details}</p>
-            <p className={styles.profileDataContact}><b>Contato: </b> ${props.contact}</p>
+            <p className={styles.profileDataDescription}>
+              <b>Descrição: </b>
+              {props.description}
+            </p>
+            <p className={styles.profileDataStartDate}>
+              <b>Data de início: </b>
+              {props.startDate}
+            </p>
+            <p className={styles.profileDataBudget}>
+              <b>Budget: </b> ${props.budget}
+            </p>
+            <p className={styles.profileDataStartDetails}>
+              <b>Detalhes: </b>
+              {props.details}
+            </p>
+            <p className={styles.profileDataContact}>
+              <b>Contato: </b> ${props.contact}
+            </p>
             <Link className={styles.textLink} to={`/edit-employer/${props.id}`}>
-              <button type="button" className={styles.btn}>Editar Perfil</button>
+              <button type="button" className={styles.btn}>
+                Editar Perfil
+              </button>
             </Link>
 
             <button type="button" onClick={handleDelete} className={styles.btn}>

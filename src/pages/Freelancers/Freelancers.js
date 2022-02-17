@@ -1,3 +1,4 @@
+import styles from "./Freelancers.module.css";
 import { CardFreelancer } from "../../components/CardFreelancer/CardFreelancer";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -48,9 +49,10 @@ export function Freelancers() {
   }
 
   return (
-    <>
+    <div className={styles.main}>
       <h1>Freelancers</h1>
       <SearchBar filterAPI={filterFreelancer} />
+      <div className={styles["grid-container"]}>
       {freelancer.map((currentFreelancer) => {
         return (
           <CardFreelancer
@@ -69,6 +71,7 @@ export function Freelancers() {
           />
         );
       })}
-    </>
+      </div>
+    </div>
   );
 }

@@ -80,6 +80,8 @@ export function EditFreelancer() {
           <input
             id="branding"
             name="branding"
+            maxLength={50}
+            type="text"
             value={form.branding}
             onChange={handleChange}
           />
@@ -87,6 +89,8 @@ export function EditFreelancer() {
           <input
             id="education"
             name="education"
+            maxLength={50}
+            type="text"
             value={form.education}
             onChange={handleChange}
           />
@@ -96,6 +100,8 @@ export function EditFreelancer() {
           <input
             id="recentProjects"
             name="recentProjects"
+            maxLength={50}
+            type="text"
             value={form.recentProjects}
             onChange={handleChange}
           />
@@ -105,6 +111,8 @@ export function EditFreelancer() {
           <input
             id="skills"
             name="skills"
+            maxLength={50}
+            type="text"
             value={form.skills}
             onChange={handleChange}
           />

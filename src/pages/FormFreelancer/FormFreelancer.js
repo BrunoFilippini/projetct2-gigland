@@ -96,6 +96,8 @@ export function FormFreelancer() {
             maxlength="128"
             id="skills"
             name="skills"
+            maxLength={50}
+            type="text"
             value={form.skills}
             onChange={handleChange}
           />
@@ -106,6 +108,7 @@ export function FormFreelancer() {
             maxlength="64"
             id="interest"
             name="interest"
+            
             value={form.interest}
             onChange={handleChange}
           />
