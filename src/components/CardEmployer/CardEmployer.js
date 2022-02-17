@@ -39,14 +39,13 @@ export function CardEmployer(props) {
           <div className={styles.profileInfo}>
             <span className={styles.profileName}>{props.nameProject}</span>
             <span className={styles.profileInfoUsername}>{props.area}</span>
+            <span className={styles.profileInfoUsernameB}>
+              <b>{props.description}</b>
+            </span>
           </div>
         </div>
         <div className={styles.profileData}>
           <span className={styles.profileDataFollowing}>
-            <p className={styles.profileDataDescription}>
-              <b>Descrição: </b>
-              {props.description}
-            </p>
             <p className={styles.profileDataStartDate}>
               <b>Data de início: </b>
               {props.startDate}
