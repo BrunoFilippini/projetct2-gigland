@@ -57,62 +57,60 @@ export function EditEmployer() {
   }
 
   return (
-    <>
-      <h1 className={styles.title}>Atualize seu cadastro:</h1>
+    <div className={styles.divPage}>
       <form onSubmit={handleSubmit}>
         <div className={styles.form}>
+          <h2 className={styles.title}>Atualize seu cadastro:</h2>
           <label htmlFor="nameProject">Nome do projeto:</label>
           <input
+            maxlength="32"
             id="nameProject"
             placeholder="Project Name"
             name="nameProject"
             value={form.nameProject}
             onChange={handleChange}
           />
-
           <label htmlFor="area">Segmento</label>
           <input
+            maxlength="32"
             id="area"
             placeholder="segmento"
             name="area"
-            maxLength={50}
-            type="text"
             value={form.area}
             onChange={handleChange}
           />
           <label htmlFor="description">Descrição</label>
           <input
+            maxlength="64"
             id="description"
             placeholder="Breve descrição"
             name="description"
-            maxLength={50}
-            type="text"
             value={form.description}
             onChange={handleChange}
           />
-
           <label htmlFor="startDate">Data</label>
           <input
             id="startDate"
+            type="date"
             placeholder="Data"
             name="startDate"
-            maxLength={50}
-            type="text"
             value={form.startDate}
             onChange={handleChange}
           />
           <label htmlFor="budget">Orçamento</label>
           <input
             id="budget"
-            placeholder="Orçamento"
+            placeholder="US$0,00"
             name="budget"
-            maxLength={50}
-            type="text"
+            type="number"
+            step="0.01"
+            min="1"
             value={form.budget}
             onChange={handleChange}
           />
           <label htmlFor="details">Detalhamento</label>
           <input
+            maxlength="128"
             id="details"
             placeholder="Detalhe aqui sua vaga"
             name="details"
@@ -123,19 +121,20 @@ export function EditEmployer() {
           />
           <label htmlFor="contact">Contato:</label>
           <input
+            maxlength="64"
             id="contact"
             placeholder="Endereço de e-mail"
             name="contact"
-            maxLength={50}
-            type="text"
             value={form.contact}
             onChange={handleChange}
           />
           <label htmlFor="img">Link para logo ou imagem de seu projeto:</label>
           <input id="img" name="img" value={form.img} onChange={handleChange} />
-          <button type="submit">Editar Perfil</button>
+          <button type="submit">
+            <span>Editar Perfil</span>
+          </button>
         </div>
       </form>
-    </>
+    </div>
   );
 }
