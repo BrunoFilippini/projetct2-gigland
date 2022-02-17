@@ -1,5 +1,8 @@
 # GigLand
 
+![GigLand logo](https://github.com/BrunoFilippini/projetct2-gigland/blob/main/src/assets/giglandlogo.png)
+<br>
+
 A new way to land a new gig! A new way to offer gigs!
 
 Remember those old websites that demanded hundreds of words to fill out a profile that got in the way of people getting hired or finding a professional to hire? Well, forget them! GigLand is the new online spot to find or offer a gig!
