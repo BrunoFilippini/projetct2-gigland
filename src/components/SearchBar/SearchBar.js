@@ -7,7 +7,7 @@ export function SearchBar(props) {
         type="text"
         area="searchParams"
         className={styles.searchBar}
-        placeholder="Find talent"
+        placeholder={props.placeholder}
         onKeyUp={(event) => {
         props.filterAPI(event.target.value);
         }}

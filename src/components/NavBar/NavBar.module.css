@@ -8,32 +8,38 @@
   .navBarAll {
     background-color: black;
     display: flex;
-  }
-
-  .searchBar {
-    color: white;
-    padding-right: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   /* LOGO */
   .logoGigLand {
     width: 100px;
-    margin: 0 50px 0 20px;
+    /*margin: 0 50px 0 20px;*/
   }
 
-  /* DIV COM TODOS OS BOTOES, APENAS PARA ESPAÇAMENTO */
+  /* DIV COM TODOS OS BOTOES, APENAS PARA ESPAÇAMENTO
   .allbuttonsSpace {
-    width: 100%;
+    /idth: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0 10% 0 20px;
+  }*/
+
+  /* DIV PARA ALINHAMENTO DE BOTOES */
+  .alignment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: flex-start;*/
+    margin: 0px 20px;
   }
 
   /* DIV COM OS BOTOES PARA AS LISTAS DE FREELAS E PROJETOS */
   .buttonsLinksLists {
     display: flex;
-    width: 11%;
+    /*width: 11%;*/
     justify-content: space-evenly;
   }
 
@@ -59,7 +65,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #ff003b;
+    background: rgb(83, 230, 27);
     transition: all 0.35s;
   }
 
@@ -72,9 +78,52 @@
     width: 100%;
   }
 
+  /*DIV BOTAO EMPLOYER*/
+
+  .buttonsLinksListsEmployer {
+    display: flex;
+    /*width: 11%;*/
+    justify-content: space-evenly;
+  }
+
+  /* CADA BOTÃO SEPARADO DA DIV DE CIMA */
+  .buttonsLinksListsEmployer button {
+    padding: 12px 14px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    position: relative;
+  }
+
+  .buttonsLinksListsEmployer button span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .buttonsLinksListsEmployer button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(27, 158, 245);
+    transition: all 0.35s;
+  }
+
+  .buttonsLinksListsEmployer button:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .buttonsLinksListsEmployer button:hover:after {
+    width: 100%;
+  }
+
   /* DIV COM OS BOTOES PARA OS FORMULARIOS */
   .buttonsLinksForm {
-    display: flex;
+    /*display: flex;*/
     width: 20%;
     justify-content: space-evenly;
   }
@@ -102,7 +151,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: orange;
+    background: rgb(83, 230, 27);
     transition: all 0.35s;
   }
 
@@ -114,4 +163,48 @@
   .buttonsLinksForm button:hover:after {
     width: 100%;
   }
+}
+
+/*BOTAO FORM EMPLOYER*/
+
+.buttonsLinksFormEmployer {
+  /*display: flex;*/
+  width: 20%;
+  justify-content: space-evenly;
+}
+
+/* CADA BOTÃO SEPARADO DA DIV DE CIMA DOS FORMULARIOS */
+.buttonsLinksFormEmployer button {
+  width: 200px;
+  padding: 12px 14px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.buttonsLinksFormEmployer button span {
+  position: relative;
+  z-index: 2;
+}
+
+.buttonsLinksFormEmployer button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(27, 158, 245);
+  transition: all 0.35s;
+}
+
+.buttonsLinksFormEmployer button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.buttonsLinksFormEmployer button:hover:after {
+  width: 100%;
 }

@@ -11,14 +11,17 @@
     justify-content: space-around;
   }
 
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .h1Free{
     margin: 20px;
     font-family: "Roboto", sans-serif;
-    margin-left: 625px;
-    margin-right: auto;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 45px;
   }
 }

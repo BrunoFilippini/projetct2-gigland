@@ -47,18 +47,18 @@ export function CardEmployer(props) {
         <div className={styles.profileData}>
           <span className={styles.profileDataFollowing}>
             <p className={styles.profileDataStartDate}>
-              <b>Data de início: </b>
+              <b>Start date: </b>
               {props.startDate}
             </p>
             <p className={styles.profileDataBudget}>
-              <b>Budget: </b> ${props.budget}
+              <b>Compensation: </b> ${props.budget}
             </p>
             <p className={styles.profileDataStartDetails}>
-              <b>Detalhes: </b>
+              <b>Details: </b>
               {props.details}
             </p>
             <p className={styles.profileDataContact}>
-              <b>Contato: </b>
+              <b>Contact: </b>
               {props.contact}
             </p>
             <Link className={styles.textLink} to={`/edit-employer/${props.id}`}>
